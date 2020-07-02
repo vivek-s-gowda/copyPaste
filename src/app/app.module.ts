@@ -10,6 +10,7 @@ import { RouterModule, Routes } from "@angular/router";
 const appRoutes: Routes = [
   { path: "", redirectTo: "/login", pathMatch: "full" },
   { path: "login", component: LoginComponent },
+  { path: "content", component: ContentComponent },
 ];
 @NgModule({
   declarations: [
