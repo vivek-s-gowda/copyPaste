@@ -26,11 +26,12 @@
 
 .signin-logo {
   position: absolute;
-  width: 30%;
+  width: 35%;
   height: 30%;
-  left: 37%;
-  top: 4%;
-  background: url(src/assets/image/logo.png);
+  left: 33%;
+  top: 1%;
+  padding-top: 3px;
+  background: url(src/assets/image/logo3.png);
 }
 
 .input-email {
@@ -71,7 +72,7 @@
   line-height: 100%;
   /* identical to box height */
 
-  color: grey;
+  color: rgb(24, 139, 216);
   transform: rotate(-0.39deg);
 }
 .create-acc {
@@ -90,7 +91,7 @@
   font-size: 100%;
   line-height: 100%;
 
-  color: grey;
+  color: rgb(24, 139, 216);
 
   transform: rotate(-0.39deg);
 }

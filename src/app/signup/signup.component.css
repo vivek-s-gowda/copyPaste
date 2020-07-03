@@ -80,11 +80,12 @@
     font-family: Questrial;
     font-style: normal;
     font-weight: normal;
-    font-size: 100%;
+    font-size: 120%;
     line-height: 100%;
   
-    color: grey;
+    color: rgb(24, 139, 216);
   
     transform: rotate(-0.39deg);
   }
+ 
   
