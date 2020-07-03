@@ -11,6 +11,7 @@ const appRoutes: Routes = [
   { path: "", redirectTo: "/login", pathMatch: "full" },
   { path: "login", component: LoginComponent },
   { path: "content", component: ContentComponent },
+  { path: "signup", component: SignupComponent }
 ];
 @NgModule({
   declarations: [
