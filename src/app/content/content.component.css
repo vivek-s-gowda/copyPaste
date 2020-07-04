@@ -31,6 +31,7 @@
   top: 25%;
   border-radius: 75px;
   background: #a2b6ff;
+  cursor: pointer;
 }
 
 .user-round-text {
@@ -66,4 +67,16 @@
   backdrop-filter: blur(4px);
   font-family: sans-serif;
   font-size: 20pt;
+}
+
+.logout{
+  position: absolute;
+  width: 104px;
+  height: 21px;
+  left: -154%;
+  top: 100%;
+  border-radius: 10px;
+  background: #dfdede;
+  cursor: pointer;
+  text-align: center;
 }

@@ -1,9 +1,31 @@
 <div class="back-image"></div>
 <div class="signup-card">
   <img class="signup-logo" src="/assets/image/logo.png" />
-  <input class="input-email" type="email" for="email" />
-  <input class="input-pswd" type="password" for="password" />
-  <input class="input-cnfmpswd" type="password" for="confirm-password" />
-  <p ><a href="create-account()" class="create-acc">Create Account</a></p>
-</div>
+    <input
+      class="input-email"
+      type="email"
+      for="email"
+      placeholder="E-mail"
+      [(ngModel)]="userName"
+      (blur)="ValidateEmail(userName)"
+    />
+    <div class="error-message" *ngIf="invalidEmail">Invalid mail</div>
+  <input
+    class="input-pswd"
+    type="password"
+    for="password"
+    placeholder="Password"
+    [(ngModel)]="password"
+  />
+  <input
+    class="input-cnfmpswd"
+    type="password"
+    for="confirm-password"
+    placeholder="Confirm Password"
+    [(ngModel)]="cPassword"
+    (blur)="checkPassword()"
+  />
 
+  <div class="error-message" style="top:77%;left:34%" *ngIf="passwordError">Password not matching</div>
+  <p><a (click)="createAccount()" class="create-acc">Create Account</a></p>
+</div>

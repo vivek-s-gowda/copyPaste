@@ -78,7 +78,7 @@
   top: 89%;
   text-decoration: none;
 
-  font-family: Questrial;
+  font-family: "Questrial";
   font-style: normal;
   font-weight: normal;
   font-size: 120%;
@@ -87,4 +87,16 @@
   color: rgb(24, 139, 216);
 
   transform: rotate(-0.39deg);
+  cursor: pointer;
+}
+
+.error-message {
+  color: red;
+  position: relative;
+  top: 48%;
+  left: 41%;
+
+  font-family: "Questrial";
+  font-style: normal;
+  font-weight: normal;
 }

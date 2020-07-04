@@ -6,9 +6,10 @@ import { LoginComponent } from "./login/login.component";
 import { SignupComponent } from "./signup/signup.component";
 import { ContentComponent } from "./content/content.component";
 import { RouterModule, Routes } from "@angular/router";
+import { FormsModule } from '@angular/forms';
 
 const appRoutes: Routes = [
-  { path: "", redirectTo: "/login", pathMatch: "full" },
+  { path: "", redirectTo: "/content", pathMatch: "full" },
   { path: "login", component: LoginComponent },
   { path: "content", component: ContentComponent },
   { path: "signup", component: SignupComponent }
@@ -26,6 +27,7 @@ const appRoutes: Routes = [
       appRoutes,
       { enableTracing: false } // <-- debugging purposes only
     ),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

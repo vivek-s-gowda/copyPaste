@@ -95,3 +95,11 @@
 
   transform: rotate(-0.39deg);
 }
+
+.invalidUser {
+  color: red;
+  position: relative;
+  top: 65%;
+  left: 40%;
+  font-weight: bold;
+}

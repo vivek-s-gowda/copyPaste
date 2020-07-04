@@ -1,9 +1,26 @@
 <div class="back-image"></div>
 <div class="signin-card">
   <img class="signin-logo" src="/assets/image/logo.png" />
-  <input class="input-email" type="email" for="email" />
-  <input class="input-pswd" type="password" for="password" />
-  <input class="signin-button" type="button" value="Signin">
-  <p ><a href="/signup.component.html"class="create-acc">Create Account</a></p>
+  <input
+    class="input-email"
+    type="email"
+    for="email"
+    [(ngModel)]="userName"
+    placeholder="E-mail"
+  />
+  <input
+    class="input-pswd"
+    type="password"
+    for="password"
+    [(ngModel)]="password"
+    placeholder="Password"
+  />
+  <div class="invalidUser" *ngIf="invalidUser">Invalid User</div>
+  <input
+    class="signin-button"
+    type="button"
+    value="Sign in"
+    (click)="login()"
+  />
+  <p><a href="/signup" class="create-acc">Create Account</a></p>
 </div>
-
