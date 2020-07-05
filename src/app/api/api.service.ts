@@ -8,7 +8,7 @@ import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http
 })
 export class ApiService {
 
-  endpoint: string = 'http://copypasteserver.herokuapp.com/api';
+  endpoint: string = 'http://localhost:3000/api';
   headers = new HttpHeaders().set('Content-Type', 'application/json');
   errorMgmt;
   constructor(private http: HttpClient) { }
@@ -27,6 +27,22 @@ export class ApiService {
     .pipe(
       catchError(this.errorMgmt)
     )
+  }
+
+  updateContent(data): Observable<any> {
+    let API_URL = `${this.endpoint}/updateContent`;
+    return this.http.post(API_URL, data)
+    .pipe(
+      catchError(this.errorMgmt)
+    )
+  }
+
+  getContent(data): Observable<any> {
+    let API_URL = `${this.endpoint}/getContent`;
+    return this.http.post(API_URL, data)
+      .pipe(
+        catchError(this.errorMgmt)
+      )
   }
 
 }

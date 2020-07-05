@@ -18,6 +18,9 @@
       font-family: sans-serif;
       font-size: 10pt;
       border-radius: 10px;
+      border: 0px;
     "
+    [(ngModel)]="content"
+    (input)="update(content)"
   ></textarea>
 </div>
