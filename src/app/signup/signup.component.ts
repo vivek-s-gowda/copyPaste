@@ -1,4 +1,6 @@
 import { Component, OnInit } from "@angular/core";
+import { Router, ActivatedRoute } from "@angular/router";
+import { ApiService } from "../api/api.service";
 
 @Component({
   selector: "app-signup",
@@ -11,8 +13,13 @@ export class SignupComponent implements OnInit {
   cPassword: string;
   invalidEmail: boolean;
   passwordError: boolean;
+  errorInRegister: boolean;
 
-  constructor() {}
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router,
+    private apiService: ApiService
+  ) {}
 
   ngOnInit(): void {}
 
@@ -20,6 +27,20 @@ export class SignupComponent implements OnInit {
     console.log("user name : ", this.userName);
     console.log("password : ", this.password);
     console.log("confirm password : ", this.cPassword);
+    this.apiService
+      .registerUser({
+        userName: this.userName.trim(),
+        password: this.password.trim(),
+      })
+      .subscribe((res) => {
+        console.log("resoponse : ", res);
+        if (res) {
+          this.errorInRegister = false;
+          this.router.navigate(["/login"], { relativeTo: this.route });
+        } else {
+          this.errorInRegister = true;
+        }
+      });
   }
 
   ValidateEmail(inputText) {
