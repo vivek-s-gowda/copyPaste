@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "copyPaste"
+    }
+  },
+  "defaultProject": "copyPaste",
+  "cli": {
+    "analytics": false
+  }
 }

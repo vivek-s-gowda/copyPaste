@@ -8,7 +8,7 @@ import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http
 })
 export class ApiService {
 
-  endpoint: string = 'http://copypasteserver.herokuapp.com/api';
+  endpoint: string = 'http://localhost:3000/api';
   headers = new HttpHeaders().set('Content-Type', 'application/json');
   errorMgmt;
   constructor(private http: HttpClient) { }
