@@ -103,9 +103,9 @@
 @media only screen and (max-width:600px){
   .signin-card {
     position: absolute;
-    width: 70%;
+    width: 96%;
     height: 70%;
-    left: 15%;
+    left: 2%;
     top: 13%;
   
     background: #ffffff;
@@ -114,41 +114,46 @@
   }
   .signin-logo {
     position: absolute;
-    width: 75%;
+    width: 60%;
     height: 30%;
-    left: 14%;
+    left: 20%;
     top: 1%;
     padding-top: 3px;
     background: url(src/assets/image/logo3.png);
   }
   .input-email {
     position: absolute;
-    width: 67%;
+    width: 80%;
     height: 7%;
-    left: 18%;
+    left: 10%;
     top: 34%;
-  
+    opacity: 0.9;
     background: #ebe9e9;
     opacity: 0.6;
+    border:0px;
     border-radius: 7px;
+
+    text-align: center;
   }
   .input-pswd {
     position: absolute;
-    width: 67%;
+    width: 80%;
     height: 7%;
-    left: 18%;
-    top: 52%;
-  
+    left: 10%;
+    top: 45%;
+    opacity: 0.9;
+    border:0px;
     background: #ebe9e9;
     opacity: 0.6;
     border-radius: 7px;
+    text-align: center;
   }
   .signin-button {
     position: absolute;
     width: 30%;
     height: 6%;
     left: 35%;
-    top: 70%;
+    top: 60%;
   
     font-family: Questrial;
     font-style: normal;
@@ -163,8 +168,8 @@
     position: absolute;
     width: 40%;
     height: 6%;
-    left: 32%;
-    top: 85%;
+    left: 35%;
+    top: 75%;
     text-decoration: none;
   
     font-family: Questrial;

@@ -43,7 +43,7 @@
 
   background: #ebe9e9;
   opacity: 0.6;
-  border-radius: 10px;
+  border-radius: 7px;
 }
 .input-pswd {
   position: absolute;
@@ -54,7 +54,7 @@
 
   background: #ebe9e9;
   opacity: 0.6;
-  border-radius: 10px;
+  border-radius: 7px;
 }
 .input-cnfmpswd {
   position: absolute;
@@ -65,7 +65,7 @@
 
   background: #ebe9e9;
   opacity: 0.6;
-  border-radius: 10px;
+  border-radius: 7px;
 }
 
 .create-acc {
