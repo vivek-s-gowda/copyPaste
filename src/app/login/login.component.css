@@ -57,8 +57,6 @@
   border-radius: 10px;
 }
 .signin-button {
-  /* Sign in */
-
   position: absolute;
   width: 20%;
   height: 6%;
@@ -70,14 +68,11 @@
   font-weight: normal;
   font-size: 120%;
   line-height: 100%;
-  /* identical to box height */
 
   color: rgb(24, 139, 216);
   transform: rotate(-0.39deg);
 }
 .create-acc {
-  /* Create Account */
-
   position: absolute;
   width: 30%;
   height: 6%;
@@ -102,4 +97,84 @@
   top: 65%;
   left: 40%;
   font-weight: bold;
+}
+
+
+@media only screen and (max-width:600px){
+  .signin-card {
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    left: 15%;
+    top: 13%;
+  
+    background: #ffffff;
+    opacity: 0.69;
+    border-radius: 10px;
+  }
+  .signin-logo {
+    position: absolute;
+    width: 75%;
+    height: 30%;
+    left: 14%;
+    top: 1%;
+    padding-top: 3px;
+    background: url(src/assets/image/logo3.png);
+  }
+  .input-email {
+    position: absolute;
+    width: 67%;
+    height: 7%;
+    left: 18%;
+    top: 34%;
+  
+    background: #ebe9e9;
+    opacity: 0.6;
+    border-radius: 7px;
+  }
+  .input-pswd {
+    position: absolute;
+    width: 67%;
+    height: 7%;
+    left: 18%;
+    top: 52%;
+  
+    background: #ebe9e9;
+    opacity: 0.6;
+    border-radius: 7px;
+  }
+  .signin-button {
+    position: absolute;
+    width: 30%;
+    height: 6%;
+    left: 35%;
+    top: 70%;
+  
+    font-family: Questrial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 110%;
+    line-height: 100%;
+  
+    color: rgb(24, 139, 216);
+    transform: rotate(-0.39deg);
+  }
+  .create-acc {
+    position: absolute;
+    width: 40%;
+    height: 6%;
+    left: 32%;
+    top: 85%;
+    text-decoration: none;
+  
+    font-family: Questrial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 100%;
+    line-height: 100%;
+  
+    color: rgb(24, 139, 216);
+  
+    transform: rotate(-0.39deg);
+  }
 }
