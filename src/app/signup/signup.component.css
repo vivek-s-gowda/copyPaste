@@ -100,3 +100,90 @@
   font-style: normal;
   font-weight: normal;
 }
+
+
+@media only screen and (max-width: 600px) {
+
+  .signup-logo {
+    position: absolute;
+    width: 60%;
+    height: 30%;
+    left: 20%;
+    top: 1%;
+    padding-top: 3px;
+    background: url(src/assets/image/logo3.png);
+  }
+
+  .signup-card {
+    position: absolute;
+    width: 96%;
+    height: 75%;
+    left: 2%;
+    top: 13%;
+  
+    background: #ffffff;
+    opacity: 0.69;
+    border-radius: 10px;
+  }
+
+  .input-email {
+    position: absolute;
+    width: 80%;
+    height: 7%;
+    left: 10%;
+    top: 30%;
+    border: 0px;
+    background: #ebe9e9;
+    opacity: 0.9;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .input-pswd {
+    position: absolute;
+    width: 80%;
+    height: 7%;
+    left: 10%;
+    top: 40%;
+    border: 0px;
+    background: #ebe9e9;
+    opacity: 0.9;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .input-cnfmpswd {
+    position: absolute;
+    width: 80%;
+    height: 7%;
+    left: 10%;
+    top: 50%;
+    border: 0px;
+    background: #ebe9e9;
+    opacity: 0.9;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .create-acc {
+    /* Create Account */
+  
+    position: absolute;
+    width: 40%;
+    height: 6%;
+    left: 35%;
+    top: 65%;
+    text-decoration: none;
+  
+    font-family: "Questrial";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 120%;
+    line-height: 100%;
+  
+    color: rgb(24, 139, 216);
+  
+    transform: rotate(-0.39deg);
+    cursor: pointer;
+  }
+
+}
