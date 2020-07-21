@@ -114,7 +114,7 @@
     background: url(src/assets/image/logo3.png);
   }
 
-  .signup-card {
+  .signup-card { 
     position: sticky;
     width: 96%;
     height: 550px;
